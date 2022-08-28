@@ -1,0 +1,17 @@
+server:
+   port: 8080
+
+spring:
+   datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      url: jdbc:mysql://localhost:3306/sistema_blog_spring_boot
+      password: '123456'
+   jpa:
+      show-sql: true
+      hibernate:
+         ddl-auto: update
+
+app:
+   jwt-secret: JWTSecretKey
+   jwt-expiration-milliseconds: 360000000
